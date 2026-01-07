@@ -2,23 +2,22 @@
 
 namespace App\Repository;
 
-use App\Entity\Visite;
+use App\Entity\Visit;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @extends ServiceEntityRepository<Visite>
+ * @extends ServiceEntityRepository<Visit>
  */
-class VisiteRepository extends ServiceEntityRepository
+class VisitRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Visite::class);
+        parent::__construct($registry, Visit::class);
     }
 
-
 //    /**
-//     * @return Visite[] Returns an array of Visite objects
+//     * @return Visit[] Returns an array of Visit objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -32,7 +31,7 @@ class VisiteRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Visite
+//    public function findOneBySomeField($value): ?Visit
 //    {
 //        return $this->createQueryBuilder('v')
 //            ->andWhere('v.exampleField = :val')
